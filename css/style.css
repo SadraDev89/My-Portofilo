@@ -1,0 +1,585 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    /* Colors */
+    --bg: #f7f8f2;
+    --black: #252a22;
+    --gray: #92988b;
+    --line: #e4e8dc;
+
+    /* Accent */
+    --lime: #63c617;
+    --lime-secondary: #6cce1b;
+    --dark-green: #6ae125;
+
+    /* Typography */
+    --font-main: 'Vazirmatn', sans-serif;
+
+    /* Transitions */
+    --transition: 300ms;
+
+    /* Font Sizes */
+    --text-xs: 11px;
+    --text-sm: 13px;
+    --text-base: 15px;
+    --text-lg: 18px;
+    --text-xl: 21px;
+    --text-big-bold: 30px;
+
+    --heading-sm: 25px;
+    --heading-md: 32px;
+    --heading-lg: 48px;
+
+    /* Font Weights */
+    --weight-light: 300;
+    --weight-regular: 400;
+    --weight-medium: 500;
+    --weight-semibold: 600;
+    --weight-bold: 700;
+    --weight-extrabold: 800;
+    --weight-black: 900;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg);
+    font-family: var(--font-main), sans-serif;
+    color: var(--black);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    border-bottom: 1px solid var(--line);
+}
+
+header h1 {
+    font-weight: 800;
+    color: var(--black);
+}
+
+header h1 span {
+    color: var(--lime-secondary);
+}
+
+.nav-header {
+    display: flex;
+    gap: 15px;
+    color: var(--gray);
+    font-size: var(--text-sm);
+}
+
+header p {
+    color: var(--gray);
+    font-size: var(--text-sm);
+}
+
+/* Hero */
+#name-title {
+    font-size: 60px;
+    color: var(--black);
+}
+
+.text-hero {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.hero-section {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#sadra-hero {
+    background-color: var(--dark-green);
+    color: var(--black);
+    padding: 8px;
+    font-weight: 900;
+}
+
+.text-hero p {
+    color: var(--gray);
+    margin-top: 20px;
+}
+
+#hello-sadra {
+    font-size: var(--text-sm);
+}
+
+#years-nums {
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 100px;
+    padding: 10px;
+    font-weight: var(--weight-extrabold);
+    color: var(--black);
+}
+
+.years-hero {
+    display: flex;
+    align-items: flex-end;
+    border-bottom: 1px solid var(--line);
+}
+
+#years-nums span {
+    color: var(--lime);
+}
+
+.full-name {
+    font-weight: 500;
+}
+
+.border-buttom-in-yrs-txt {
+    font-size: 11px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6px;
+    color: var(--gray);
+}
+
+.hero-left-years {
+    display: flex;
+    align-items: flex-end;
+}
+
+.black-link {
+    background-color: var(--black);
+    color: white;
+    font-size: var(--text-sm);
+    padding: 6px;
+    transition: var(--transition);
+}
+
+.black-link:hover {
+    background-color: var(--bg);
+    border: 1px solid var(--line);
+    transition: var(--transition);
+    color: var(--black);
+}
+
+.link-black {
+    display: flex;
+    margin-top: 20px;
+}
+
+/* About Me */
+.about-me {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.articale-txt-with-no-space-txt {
+    color: var(--gray);
+}
+
+.articale-about-me {
+    flex-direction: column;
+    display: flex;
+    gap: 20px;
+}
+
+.left-txt {
+    margin-top: 100px;
+    font-size: var(--heading-sm);
+    color: var(--black);
+}
+
+.bold-txt {
+    color: var(--black);
+    font-size: var(--text-big-bold);
+}
+
+.articale-txt-with-no-space-txt {
+    font-size: var(--text-sm);
+}
+
+#based-creative-txt {
+    font-size: var(--text-sm);
+    color: var(--gray);
+}
+
+.left-txt p span {
+    color: var(--lime);
+    font-weight: 700;
+}
+
+.left-txt-class {
+    display: flex;
+    flex-direction: column;
+}
+
+.abililiy-buttom {
+    display: flex;
+    gap: 10px;
+}
+
+.button-style {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--text-base);
+    border: 2px solid var(--line);
+    padding: 8px;
+    transition: var(--transition);
+    color: var(--gray);
+}
+
+.button-style:hover {
+    background-color: var(--dark-green);
+    transform: translate(0, -2px);
+    border-color: var(--dark-green);
+    color: var(--black);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.my-ability-card {
+    align-self: center;
+    width: 90%;
+    margin-top: 100px;
+    max-width: 800px;
+    border-top: 2px solid var(--line);
+    border-bottom: 2px solid var(--line);
+}
+
+
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.cards-ability {
+    padding: 20px;
+    border-right: 2px solid var(--line);
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    align-content: flex-end;
+}
+
+.cards-ability-1 {
+    padding: 20px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    align-content: flex-end;
+}
+
+.cards-ability-2 {
+    padding: 20px;
+    border-right: 1px solid var(--line);
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    align-content: flex-end;
+}
+
+
+.cards-ability-1 p {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.cards-ability-2 p {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.cards-ability-2 p {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.cards-ability-1 p {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+
+.cards-ability p {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+
+
+.cards-ability p span {
+    color: var(--dark-green);
+}
+
+.cards-ability-1 p span {
+    color: var(--dark-green);
+}
+
+.cards-ability-2 p span {
+    color: var(--dark-green);
+}
+
+.bold-txt-h3 {
+    font-weight: 600;
+    font-size: var(--text-big-bold);
+}
+
+.my-tool-section {
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+}
+
+
+.button-right-tool-section {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.button-tool {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    font-size: var(--text-base);
+    border: 2px solid var(--line);
+    padding: 8px;
+    transition: var(--transition);
+    color: var(--gray);
+}
+
+.button-tool:hover {
+    background-color: var(--dark-green);
+    transform: translate(0, -2px);
+    border-color: var(--dark-green);
+    color: var(--black);
+
+}
+
+.txt-tool-me p {
+    color: var(--gray);
+    margin-top: 20px;
+}
+
+.column-table {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: right;
+}
+
+.row {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 500px;
+    padding: 10px;
+    border-bottom: 1px solid var(--line);
+    min-height: 92px;
+}
+
+.row span {
+    color: var(--lime-secondary);
+    font-weight: 700;
+}
+
+.row article {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.bold-column-table {
+    font-weight: 800;
+    font-size: 17px;
+}
+
+.my-feuture {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+
+}
+
+#rasht-food-img {
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid var(--line);
+}
+
+#developer-hub-img {
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid var(--line);
+}
+
+.project-card {
+    display: flex;
+    margin: 20px;
+    margin-top: 100px;
+    justify-content: space-evenly;
+}
+
+.my-project {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.dev-hub h4 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.rasht-food h4 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.rasht-food {
+    padding: 6px;
+    background-color: var(--bg);
+    box-shadow: 0px 4px 11px 1px #0000002e;
+    transition: var(--transition);
+}
+
+.rasht-food:hover {
+    transform: translate(0, -10px);
+    transition: var(--transition);
+}
+
+.dev-hub {
+    padding: 6px;
+    background-color: var(--bg);
+    box-shadow: 0px 4px 11px 1px #0000002e;
+    transition: var(--transition);
+}
+
+.dev-hub:hover {
+    transform: translate(0, -10px);
+    transition: var(--transition);
+}
+
+/* Responsive */
+@media (max-width: 425px) {
+    .hero-section {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .hero-left-years {
+        justify-content: center;
+    }
+
+    #sadra-logo-header {
+        font-size: var(--text-lg);
+    }
+
+    .nav-header a {
+        font-size: 0px;
+    }
+
+    .about-me {
+        flex-direction: column;
+    }
+
+    .articale-about-me {
+        align-items: center;
+    }
+
+    .left-txt-class {
+        padding: 6px;
+    }
+
+    .left-txt-class p {
+        font-size: 20px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .cards-ability {
+        border: none;
+        border-bottom: 1px solid var(--line);
+        width: 100%;
+        align-items: center;
+    }
+
+    .cards-ability-1 {
+        border: none;
+        border-bottom: 1px solid var(--line);
+        width: 100%;
+        align-items: center;
+    }
+
+    .cards-ability-2 {
+        border: none;
+        border-bottom: 1px solid var(--line);
+        align-items: center;
+    }
+
+    .my-tool-section {
+        flex-direction: column;
+        gap: 8px;
+        margin: 5px;
+        margin-top: 80px;
+    }
+
+    .button-tool {
+        padding: 4px;
+    }
+
+    .my-feuture {
+        display: flex;
+        flex-direction: column;
+        margin: 30px;
+
+    }
+
+    .column-table {
+        margin-top: 20px;
+    }
+
+    .left-txt {
+        margin-top: 100px;
+        font-size: var(--heading-sm);
+        color: var(--black);
+        padding: 10px;
+    }
+
+    main {
+        margin: 10px;
+    }
+
+    .project-card {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
